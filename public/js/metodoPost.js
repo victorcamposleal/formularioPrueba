@@ -42,7 +42,7 @@ document.getElementById('invalid-feedback').innerHTML="El email introducido no e
 return (false)
 }
 }
-//esta validacion es para numeros espanoles
+//esta validacion es par numeros de telfonos
 
 function validarT() {
 
@@ -60,7 +60,7 @@ return (false)
 
 
 // si todo se cumple se manda la informacions
-if (nombre.length !== 0 && validarEmail===true &&email.length!=0 && condiciones === true && mensaje.length >= 50) {
+if (nombre.length !== 0 && validarEmail===true &&email.length!=0 && condiciones === true && mensaje.length >= 30) {
 console.log("ok")
 
         fetch('/formulario', {

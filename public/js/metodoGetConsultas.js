@@ -8,11 +8,11 @@ fetch('/consultas')
                 for (let i = 0; i< data.length; i++) {
                     document.getElementById('consultas').innerHTML += `
                     <ul class="consultas">
-                    <li > nombre: ${data[i].nombre}</li>
-                    <li > email: ${data[i].email}</li>
-                    <li > email: ${data[i].tipoConsulta}</li>
-                    <li> mensaje: ${data[i].mensaje}</li>
-                    <li > terminos: ${data[i].condiciones}</li>
+                    <li > <strong>Nombre</strong>: ${data[i].nombre}</li>
+                    <li ><strong> Email</strong>: ${data[i].email}</li>
+                    <li > <strong>Tipo Consulta</strong>: ${data[i].tipoConsulta}</li>
+                    <li> <strong>Mensaje</strong>: ${data[i].mensaje}</li>
+                    <li > <strong>Términos</strong>: ${data[i].condiciones}</li>
                     </ul>
                     `;
                     
