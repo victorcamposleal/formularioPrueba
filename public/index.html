@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- mi  CSS -->
+   <link rel="stylesheet" href="css/style.css">
+    <title>Formulario-bit</title>
+</head>
+<!--container se activa para hacerlo responsive para hacerlo responsive -->
+
+<body class="container-fluid">
+<header>
+
+
+    
+</header>
+
+    <form onsubmit="enviarConsulta()" class="needs-validation" novalidate>
+        <!-- el nombre debe de ser requerido! -->
+        <!-- se requieren solo letras! -->
+        <div class="form-group row">
+
+            <label for="nombre" class="col-sm-2  col-md-2 col-lg-2 col-xl-2 col-form-label-lg">Nombre</label>
+            <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8 ">
+                <input type="text" class="form-control" id="nombre" required minlength="3" pattern="[A-Z][a-z]*">
+     
+                <div class="invalid-feedback">Debe introducir un nombre con solo letras y la primera maysculas y minimo
+                    3 letras</div>
+            </div>
+        </div>
+
+
+        <div class="form-group row">
+            <label for="apellidos" class="col-sm-2  col-md-2 col-lg-2 col-xl-2 col-form-label-lg">Apellidos</label>
+            <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                <input type="text" class="form-control" id="apellidos">
+
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="email" class="col-sm-2  col-md-2 col-lg-2 col-xl-2 col-form-label-lg" >Email</label>
+            <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback" id="invalid-feedback"></div>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="movil" class="col-sm-2  col-md-2 col-lg-2 col-xl-2 col-form-label-lg">Teléfono</label>
+            <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                <input type="tel" class="form-control" id="movil" required>
+                <div class="invalid-feedback" id="invalid-feedbackt"></div>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="fecha" class="col-sm-2  col-md-2 col-lg-2 col-xl-2 col-form-label-lg">Fecha de nacimeinto</label>
+            <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                <input type="date" class="form-control" id="fecha">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="genero" class="col-sm-2  col-md-2 col-lg-2 col-xl-2 col-form-label-lg">Género</label>
+            <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="genero"
+                        value="masculino">
+                    <label class="form-check-label" for="genero">Masculino</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="genero" value="femenino">
+                    <label class="form-check-label" for="genero">Femenino</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="genero" value="otro">
+                    <label class="form-check-label" for="genero">Otro</label>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="tipo" class="col-sm-2  col-md-2 col-lg-2 col-xl-2 col-form-label-lg">Tipo consulta</label>
+            <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                <select id="tiposConsultas" onchange="subTipo()"">
+          <option id=" tipoConsulta">Seleccione una </option>
+                </select>
+            </div>
+
+
+        </div>
+        <div class="form-group row">
+            <label for="tipo" class="col-sm-2  col-md-2 col-lg-2 col-xl-2 col-form-label-lg">Tipo consulta</label>
+            <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                <select id="subtiposConsultas">
+                    <option id="subtipoConsulta">Seleccione una </option>
+                </select>
+            </div>
+        </div>
+
+
+
+        <div class="form-group row">
+            <label for="mensaje" class="col-sm-2  col-md-2 col-lg-2 col-xl-2 col-form-label-lg">Mensaje</label>
+            <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10">
+            <textarea id="mensaje" class=" form-control col-sm-10  col-md-10 col-lg-10 col-xl-10 col-form-label"
+                required minlength="50"></textarea>
+   
+            <div class="invalid-feedback">Debe introducir por lo menos 50 palabras</div>
+        </div>
+
+        </div>
+
+
+        <div class="form-group row">
+            <label for="condiciones" class="col-sm-2  col-md-2 col-lg-2 col-xl-2 col-form-label-lg">Condiciones</label>
+            <div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                <div class="form-check col-sm-8 col-md-8 col-lg-8 col-xl-8 ">
+                    <input id="condiciones" type="checkbox" class="form-check-input" value="true" required></input>
+                    <label for="condiciones" class="col-form-label">Acepto las condiciones</label>
+     
+                    <div class="invalid-feedback">Debe aceptar los terminos y condiciones</div>
+                </div>
+             
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class=" offset-sm-2 col-sm-10">
+                <button type="submit" class="btn btn-primary">Enviar Consulta</button>
+            </div>
+        </div>
+    </form>
+
+<button class="btn-primary"><a href="consultas.html">ir a las ultimas consultas</a></button>
+
+    <!-- figure permite englobar una imagen con su titulo! -->
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+        //Script de validaciones de bootsrap
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+            
+                var forms = document.getElementsByClassName('needs-validation');
+              
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+<script src="js/metodoPost.js"></script>
+    
+
+</body>
+
+</html>
