@@ -39,7 +39,7 @@ npm run test
 
 * Website: victorcampos leal
 * Github: [@victorcamposleal](https://github.com/victorcamposleal)
-* LinkedIn: [@victor campos leal](https://linkedin.com/in/victor campos leal)
+* LinkedIn: [@victor campos leal](https://linkedin.com/in/victorcamposleal)
 
 ## Show your support
 
