@@ -77,7 +77,7 @@ console.log("ok")
 
             })
             .then(function (mensaje) {
-                console.log(mensaje)
+
                 window.alert(mensaje.mensaje)
 
             })

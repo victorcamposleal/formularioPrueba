@@ -86,10 +86,34 @@ db.collection('formulario-bitgune').find({nombre:informacion.nombre}).toArray(fu
 
  
 
-else if(respuesta.length!=0){       
-    
-console.log("mensaje la consulta esta duplicada")
-res.send({mensaje:"lo sentimos pero esta consulta ya existe"})
+else if(respuesta.length!=0){  
+    console.log(respuesta[0].email)   
+    console.log(respuesta[0].tipoConsulta)  
+    if(respuesta[0].email===informacion.email && respuesta[0].tipoConsulta===informacion.tipoConsulta){
+        console.log("mensaje la consulta esta duplicada")
+        res.send({mensaje:"lo sentimos pero esta consulta ya existe"})
+
+
+    }
+else{
+
+    db.collection('formulario-bitgune').insertOne(informacion, function (err,result) {
+        if(err!==null){
+            res.send("No se ha realizado la solicitud corecctamente, intente de nuevo y disculpe las molestias")}
+            
+            
+            
+            else{
+                console.log("recibido")
+                res.send({mensaje:"la Solicitud se ha enviado correctamente yes"})
+            }
+        
+    });
+
+
+
+
+}
 
     }
     else{
