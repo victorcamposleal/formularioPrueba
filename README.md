@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
 # formularioPrueba
 
->>>>>>> 214f404f235a8dd4e963b232ec632fcd321f7a0e
 <h1 align="center">Welcome to bitgune-formulario 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
