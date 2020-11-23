@@ -11,12 +11,7 @@
   </a>
 </p>
 
-<<<<<<< HEAD
-> Este es un formulario que se puede utilizar en una aplicación Web para mandar las distintas consultas de los clientes.también es posible ver las consultas que han hecho los clientes con los campos más relevantes.el programa está hecho con Node.js,Expess.js y Mongodb y es necesario tener estos programas para que el programa funcione. tendras que poner en tu navegador http://localhost:3000/  se inicia en http://localhost:3000/  por default o en otro puerto dependiendo cual tengas
-
-=======
 > Este es un formulario que se puede utilizar en una aplicación Web para mandar las distintas consultas de los clientes.también es posible ver las consultas que han hecho los clientes con los campos más relevantes.el programa está hecho con Node.js,Expess.js y Mongodb y es necesario tener estos programas para que el programa funcione. tendras que poner en tu navegador http://localhost:3000/ se inicia en http://localhost:3000/  por default o en otro puerto dependiendo cual tengas
->>>>>>> 214f404f235a8dd4e963b232ec632fcd321f7a0e
 
 ## Prerequisites
 
@@ -24,12 +19,9 @@
 - node.js
 - mongoDB
 ```
-<<<<<<< HEAD
-=======
 
 
 
->>>>>>> 214f404f235a8dd4e963b232ec632fcd321f7a0e
 ## Install
 
 ```sh
@@ -61,8 +53,4 @@ npm run test
 Give a ⭐️ if this project helped you!
 
 ***
-<<<<<<< HEAD
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
-=======
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
->>>>>>> 214f404f235a8dd4e963b232ec632fcd321f7a0e
