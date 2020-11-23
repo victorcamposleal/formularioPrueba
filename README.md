@@ -8,7 +8,7 @@
   </a>
 </p>
 
-> Este es un formulario que se puede utilizar en una aplicación Web para mandar las distintas consultas de los clientes.también es posible ver las consultas que han hecho los clientes con los campos más relevantes.el programa está hecho con Node.js,Expess.js y Mongodb y es necesario tener estos programas para que el programa funcione. tendras que poner en tu navegador http://localhost:3000/se inicia en http://localhost:3000/  por default o en otro puerto dependiendo cual tengas
+> Este es un formulario que se puede utilizar en una aplicación Web para mandar las distintas consultas de los clientes.también es posible ver las consultas que han hecho los clientes con los campos más relevantes.el programa está hecho con Node.js,Expess.js y Mongodb y es necesario tener estos programas para que el programa funcione. tendras que poner en tu navegador http://localhost:3000/ se inicia en http://localhost:3000/  por default o en otro puerto dependiendo cual tengas
 
 ## Prerequisites
 
@@ -43,7 +43,7 @@ npm run test
 
 * Website: victorcampos leal
 * Github: [@victorcamposleal](https://github.com/victorcamposleal)
-* LinkedIn: [@victor campos leal](https://linkedin.com/in/victor campos leal)
+* LinkedIn: [@victor campos leal](https://linkedin.com/in/victorcamposleal)
 
 ## Show your support
 
