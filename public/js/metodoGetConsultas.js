@@ -1,4 +1,4 @@
-fetch('/consultas')
+fetch('/consultas')  
             .then(function (res) {
                 return res.json();
 

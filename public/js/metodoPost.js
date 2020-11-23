@@ -1,4 +1,4 @@
-function enviarConsulta() {
+function enviarConsulta() {  
     //coge los datos del form
     let nombre = document.getElementById("nombre").value;
     let apellidos = document.getElementById("apellidos").value;

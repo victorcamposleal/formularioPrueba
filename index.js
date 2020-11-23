@@ -78,7 +78,7 @@ condiciones:req.body.condiciones
 db.collection('formulario-bitgune').find({nombre:informacion.nombre}).toArray(function (err,respuesta) {
    
     console.log(respuesta.length)
-
+  
    
     if(err!==null){
         console.log(err);
